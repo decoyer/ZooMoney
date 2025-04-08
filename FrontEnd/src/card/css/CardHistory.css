@@ -1,0 +1,87 @@
+.card-history-box {
+  background-color: #ffcd95;
+  height: 200px;
+  min-height: 280px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-history-img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  transform: rotate(270deg);
+  /* position: static;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(270deg); */
+  margin-top: -30px;
+}
+.card-history-period-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: -25px;
+}
+.card-history-period select,
+.card-hist-go-to-account {
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 140px;
+}
+
+.card-hist-go-to-account {
+  background-color: #ff9500;
+  color: #ffff;
+  border: none;
+  border-radius: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.card-hist-go-to-account:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.card-history-content {
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.card-history-content::-webkit-scrollbar {
+  display: none; /* Chrome , Safari , Opera */
+}
+
+.card-history-content {
+  margin: 0;
+}
+
+.card-history-list {
+  max-height: calc(100vh - 450px);
+}
+
+.card-history-list-box {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+.card-history-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.info-time {
+  margin-bottom: 5px;
+}
+
+.cardHist-content {
+  max-height: calc(100vh - 260px);
+}

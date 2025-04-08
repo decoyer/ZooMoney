@@ -1,0 +1,74 @@
+.AccountDetailContent {
+  height: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.AccountDetailResult {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.AccountDetailForm {
+  width: 350px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.AccountDetailForm:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.AccountDetailView {
+  width: 350px;
+  min-height: 225px;
+  border: 2px solid #ff9500;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.AccountDetailView div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AccountDetailResult button {
+  min-width: 350px;
+  min-height: 45px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.AccountDetailResult button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.AccountDetailResult button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.AccountDetailResult span {
+  font-size: 1rem;
+}

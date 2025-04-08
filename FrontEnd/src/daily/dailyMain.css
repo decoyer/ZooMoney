@@ -1,0 +1,61 @@
+/* 메인 콘텐츠 */
+.daily-content {
+  margin-top: 50px;
+  width: 90%;
+  text-align: center;
+}
+
+/* 출석체크 캐릭터 */
+.daily-image {
+  width: 100px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/* 매일매일 출석체크 */
+.daily-check {
+  font-size: 20px;
+  color: #5a5a5a;
+  line-height: 1.5;
+  margin: 30px 25px 20px 25px;
+}
+
+/* 설명 */
+.daily-description {
+  font-size: 18px;
+  color: #5a5a5a;
+  line-height: 1.5;
+  margin: 30px 25px 20px 25px;
+}
+
+.daily-description span {
+  font-size: 18px;
+  color: #ff9500;
+  line-height: 1.5;
+}
+
+/* 출석 체크 완료 버튼 */
+.daily-button {
+  width: 90%;
+  height: 45px;
+  background-color: #ff9500;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10%;
+  transition: 0.5s ease;
+}
+
+.daily-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 네비게이션 바 */
+.menu {
+  width: 100vw;
+  max-width: 393px;
+}

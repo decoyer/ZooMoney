@@ -1,0 +1,42 @@
+.faq-InfoTitle {
+  position: relative;
+  padding: 15px 15px 15px 45px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.faq-InfoTitle a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.faq-InfoTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: calc(100% - 60px);
+  height: 1.5px;
+  background-color: #e5e7eb;
+}
+.faq-InfoTitle:hover {
+  opacity: 0.8;
+}
+.faqInfo {
+  padding: 20px 0px 20px 0px;
+  flex-grow: 1;
+  width: 100%;
+}
+.faqDetail {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.faqDetail::-webkit-scrollbar {
+  display: none;
+}

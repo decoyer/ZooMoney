@@ -1,0 +1,169 @@
+.stock-main-box {
+  border: none;
+  background-color: #fff2e2;
+  padding: 16px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 360px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.stock-main-box:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.stock-main-header {
+  width: 20%;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stock-main-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-left: -120px;
+  margin-bottom: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.stock-main-info:hover {
+  color: #ff9500;
+  opacity: 0.8;
+}
+.link-no-underline {
+  text-decoration: none;
+}
+.questionmark {
+  font-size: 18px;
+}
+.stock-main-header img {
+  width: 80px;
+  position: absolute;
+  left: 100px;
+  bottom: -10px;
+  transform: scaleX(-1);
+}
+.stock-main-box h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.stock-main-box-amount {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.stock-main-box-text {
+  color: gray;
+  font-size: 12px;
+}
+.stock-main-box-detail {
+  margin-top: 10px;
+}
+.stock-main-box-detail div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.stock-main-button {
+  width: 80%;
+  background-color: #ff9500;
+  color: #fff;
+  font-size: 14px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.stock-main-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+/* 헤더 고정 */
+.table-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+/* 테이블 바디 영역 스크롤 */
+.table-body {
+  max-height: calc(100vh - 620px); /* 스크롤 높이 조정 */
+  overflow-y: auto;
+  display: block;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.stock-main-mystock-list-box33 {
+  max-height: calc(100vh - 580px);
+}
+.table-body::-webkit-scrollbar {
+  display: none;
+}
+
+.stock-table th,
+.stock-table td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.stock-table th {
+  background-color: #f5f5f5;
+}
+
+.profit {
+  color: #ff2200;
+}
+
+.loss {
+  color: #0059ff;
+}
+
+.current-price {
+  font-size: 12px;
+  color: #666;
+}
+
+.sell-button {
+  background-color: #2667e1;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.sell-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.stock-main-mystock-list-box {
+  width: 80%;
+}
+
+.myStock-tableName {
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 1.25rem;
+}
+
+.stock-table {
+  margin-top: 0px;
+}

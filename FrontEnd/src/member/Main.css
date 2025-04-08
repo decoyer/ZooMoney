@@ -1,0 +1,214 @@
+.main-zoomoney-text {
+  width: 80%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.main-zoo {
+  color: #ff9500;
+}
+.main-money {
+  color: #1a1a1a;
+}
+.card-main-container {
+  max-height: calc(100vh - 140px);
+}
+.card-main-box {
+  text-align: center;
+}
+.mycard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.custom-image {
+  object-fit: contain; /* 이미지 비율을 유지하면서 잘리지 않게 */
+  width: 100%; /* 회전 후 이미지를 더 크게 표시 */
+  height: auto; /* 비율에 맞게 높이 자동 조정 */
+  position: absolute; /* 부모 요소에 맞게 이미지 위치 조정 */
+  top: 50%; /* 상단에서 50% 위치로 이미지 중앙 정렬 */
+  left: 50%; /* 좌측에서 50% 위치로 이미지 중앙 정렬 */
+  transform-origin: center; /* 이미지의 회전 중심을 중앙으로 설정 */
+  transform: translate(-50%, -50%) rotate(360deg); /* 중앙 정렬 후 회전 */
+}
+.default-image {
+  object-fit: cover;
+}
+/* 용돈 정보 카드 */
+.main-allowance-box {
+  background-color: white;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #ff9500;
+  padding: 20px;
+  margin-bottom: 14px;
+  margin-top: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* 총 포인트 박스 */
+.main-point-box {
+  display: flex; /* 가로 정렬 */
+  justify-content: flex-end; /* 우측 정렬 */
+  gap: 3px; /* 이미지와 포인트 사이 간격 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+/* 포인트 이미지 */
+.main-point-image {
+  width: 18px;
+  height: 18px;
+  margin-left: 70%;
+}
+
+/* 포인트 숫자 */
+.main-point-num p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #787878;
+  margin: 0;
+}
+
+/* 용돈 정보 텍스트 */
+.main-allowance-text {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 10px;
+}
+.main-allowance-text span {
+  display: inline;
+  font-size: 20px;
+  color: #333;
+}
+/* 버튼 그룹 스타일링 */
+.main-button-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.main-button-group button {
+  min-width: 125px;
+  min-height: 50px;
+  background-color: #ff9500;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main-button-group button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.main-grid {
+  display: grid !important; /* 강제로 grid 적용 */
+  grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+  width: 100%;
+  max-width: 400px;
+}
+/* 메뉴 기능 박스 스타일 */
+.main-grid-box {
+  width: 150px;
+  height: 145px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main-grid-box div p {
+  margin-bottom: 0;
+}
+/* 개별 카드 배경색 */
+.box-skyblue {
+  background-color: #c2f1ff;
+  margin-right: 0;
+}
+.box-blue {
+  background-color: #fec7c0;
+  margin-left: 0;
+}
+.box-yellow {
+  background-color: #fff4c2;
+  margin-right: 0;
+}
+.box-pink {
+  background-color: #caffc2;
+  margin-left: 0;
+}
+/* 카드 hover 효과 */
+.main-grid-box:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.mycard-preview {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  margin: auto;
+}
+.card-pig {
+  width: 70px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.card-rabbit {
+  width: 70px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.card-deer {
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.card-giraffe {
+  width: 70px;
+  margin-left: 10px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+@keyframes bell-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.bell-shake {
+  animation: bell-shake 0.5s ease-in-out;
+}
