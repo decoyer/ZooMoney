@@ -68,10 +68,15 @@ application.properties
     naver.client.secret=_A0Hna9g98
     ```
 - *.env*
-  - 스마트 계약 및 토큰 발행 필요
+  - 스마트 계약 생성 필요([Ethereum IDE](https://remix.ethereum.org/)
     ```
+    # 아래 파일 참고
+
+    # 저금통
     AccountContract.sol
     AccountABI.json
+
+    # 카드
     CardContract.sol
     CardABI.json
     ```
