@@ -4,7 +4,9 @@ Financial Management Platform with *Spring Boot*, *React*
 using *MariaDB*
 
 ## Details
-![main](https://github.com/user-attachments/assets/b0056083-cc8f-491e-a6c5-16630f9abaeb)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b0056083-cc8f-491e-a6c5-16630f9abaeb" alt="main">
+</p>
 
 ### <div align="center">똑똑한 우리 아이 돈관리</div>
 
