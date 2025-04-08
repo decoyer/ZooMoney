@@ -69,7 +69,7 @@ application.properties
     ```
 - *.env*
   - 스마트 계약 생성 필요([Ethereum IDE](https://remix.ethereum.org/)
-    ```
+    ```INI
     # 아래 파일 참고
 
     # 저금통
