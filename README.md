@@ -68,7 +68,7 @@ application.properties
     naver.client.secret=_A0Hna9g98
     ```
 - *.env*
-  - 스마트 계약 생성 필요([Ethereum IDE](https://remix.ethereum.org/)
+  - 스마트 계약 생성 필요([Ethereum IDE](https://remix.ethereum.org/))
     ```INI
     # 아래 파일 참고
 
