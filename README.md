@@ -8,7 +8,7 @@ using *MariaDB*
   <img src="https://github.com/user-attachments/assets/6b24f294-37fd-4f2a-a944-39cddf8be309" alt="main">
 </p>
 
-### <div align="center">똑똑한 우리 아이 돈관리</div>
+### <div align="center">똑똑한 우리 아이 용돈 관리 플랫폼</div>
 
 ## Key Features
 - ```용돈 계약```
