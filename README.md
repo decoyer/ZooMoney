@@ -36,7 +36,20 @@ application.properties
 .env
 ```
 
-- *application.properties* ```..\src\main\webapp\WEB-INF\spring\```
+- *MetaMask*
+  - Chrome 확장 프로그램 설치 필요([MetaMask](https://metamask.io/))
+  - 스마트 계약 및 토큰 발행 필요
+    ```
+    AccountContract.sol
+    AccountABI.json
+    CardContract.sol
+    CardABI.json
+    ```
+  - 지갑 주소 발급 필요
+- *dump.sql*
+  - MariaDB 기준 작성
+  - 데이터 추가, 수정, 삭제(유동적으로 활용 가능)
+- *application.properties* ```..\src\main\resources\```
   - 본인인증 API 키 발급 필요([포트원 API 가이드](https://developers.portone.io/opi/ko/extra/identity-verification/v1/phone/readme?v=v1))
   - 카카오맵 API 키 발급 필요([카카오맵 API 가이드](https://apis.map.kakao.com/web/guide/))
 
@@ -53,7 +66,7 @@ application.properties
     # 카카오맵 API
     appkey=tpvp23hi47ldx0qxeqb3gzltxmdzw2aq
     ```
-- *mysqlDB.properties* ```..\src\main\webapp\WEB-INF\spring\```
+- *.env*
   - 데이터베이스 정보 입력(다른 DBMS로 대체 가능)
 
     ```INI
@@ -64,9 +77,6 @@ application.properties
     username=root
     password=1234
     ```
-- *dump.sql*
-  - MariaDB 기준 작성
-  - 데이터 추가, 수정, 삭제(유동적으로 활용 가능)
 
 ## Tasks
 - [ ] 관리자 페이지 기능 개선
