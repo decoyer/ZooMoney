@@ -1,5 +1,5 @@
 # ZooMoney
-Kids' Budgeting Platform with *Spring Boot*, *React*
+Parent-Child Budgeting Platform with *Spring Boot*, *React*
 
 using *MariaDB*
 
