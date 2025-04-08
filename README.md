@@ -44,6 +44,30 @@ application.properties
 
 - *MetaMask*
   - Chrome 확장 프로그램 설치 필요([MetaMask](https://metamask.io/))
+  - 지갑 주소 발급 필요(Ethereum Network)
+- *dump.sql*
+  - MariaDB 기준 작성
+  - 데이터 추가, 수정, 삭제(유동적으로 활용 가능)
+- *application.properties* ```..\src\main\resources\```
+  - 한국투자증권 API 키 발급 필요([한국투자증권 개발자 센터](https://apiportal.koreainvestment.com/apiservice/oauth2#L_5c87ba63-740a-4166-93ac-803510bb9c02))
+  - Gemini API 키 발급 필요([Gemini API 가이드](https://ai.google.dev/gemini-api/docs?hl=ko))
+  - 네이버 뉴스 API 키 발급 필요([네이버 개발자 센터](https://developers.naver.com/docs/serviceapi/search/news/news.md#%EB%89%B4%EC%8A%A4))
+
+    ```INI
+    # 예시
+    
+    # 한국투자증권 API
+    stock.api.key=JZiAaoY9SxiWRWAJFYTzG0trANTP5Roh23Gw
+    stock.api.secret=xPXoUt6OBD+ZcV+NAyQpWDM+E46YnOgMKKIZL3GpPzviu2bR26NNmoOmqTqj+OwpJXRY05vefO44Uq497psj69ex+X1h3tFnp2/TAjwFjG/KNCi9KQeeqTYHCeG1U9z5iv7yScf0Uwnr2f/nirhdFHmpqcOHM3mpsktEwpfjG26W1XfkPta=
+
+    # Gemini API
+    gemini.api.key=AIL4gFUyHGw6CWt0R1Ar7e7LND7_seGPdwR0gcJ
+    
+    # 네이버 뉴스 API
+    naver.client.id=XcN6HzkH9r7UUwPurxNf
+    naver.client.secret=_A0Hna9g98
+    ```
+- *.env*
   - 스마트 계약 및 토큰 발행 필요
     ```
     AccountContract.sol
@@ -51,37 +75,23 @@ application.properties
     CardContract.sol
     CardABI.json
     ```
-  - 지갑 주소 발급 필요
-- *dump.sql*
-  - MariaDB 기준 작성
-  - 데이터 추가, 수정, 삭제(유동적으로 활용 가능)
-- *application.properties* ```..\src\main\resources\```
-  - 본인인증 API 키 발급 필요([포트원 API 가이드](https://developers.portone.io/opi/ko/extra/identity-verification/v1/phone/readme?v=v1))
-  - 카카오맵 API 키 발급 필요([카카오맵 API 가이드](https://apis.map.kakao.com/web/guide/))
+  - Pinata API 키 발급 필요([Pinata API 가이드](https://docs.pinata.cloud/account-management/api-keys))
 
     ```INI
     # 예시
+
+    # MetaMask 지갑 주소 입력
+    REACT_APP_WALLET_ADDRESS=0x7KgaDDSVhoY1KsoCqm84ceY8A5d67u83jP5nhp2Q
     
-    # 본인인증 API
-    impKey=imp12345678
-    impKey2=1234567890123456
-    impSecret=TkclfeBw4uAaPWgeY5fRdOeifqSHLVA0BnB0CWY8sOuCWXEVlBCcHXD1xEhNINFVXL53du4DwPwLRz8B
+    # 토큰 스마트 계약 주소 입력(저금통 기능)
+    REACT_APP_FT_CONTRACT_ADDRESS=0xrq0uKCYW28EWsRivyxHpNav5DYTqQC7uEIxm90M6
 
-    channelKey={channel-key-b2bd2116-d93d-4316-8838-951c47abfb02}
+    # NFT 스마트 계약 주소 입력(카드 기능)
+    REACT_APP_NFT_CONTRACT_ADDRESS=0xaIYqeeiHQGgJBKJpp3pJPtRlfIO2gHbzxtnLpBDc
 
-    # 카카오맵 API
-    appkey=tpvp23hi47ldx0qxeqb3gzltxmdzw2aq
-    ```
-- *.env*
-  - 데이터베이스 정보 입력(다른 DBMS로 대체 가능)
-
-    ```INI
-    # 예시
-    
-    driverClassName=com.mysql.cj.jdbc.Driver
-    url=jdbc:mysql://localhost:3306/salre?characterEncoding=UTF-8
-    username=root
-    password=1234
+    # IPFS(Pinata) API
+    REACT_APP_PINATA_API_KEY=vkSK26YhO9CKQqUczYtS
+    REACT_APP_PINATA_SECRET_API_KEY=B5NVNWlIHhdz49c1vYbpk8720lKXMi4XKc4x1bjXB8YTctY1lJGiSzewFvgMzbz5
     ```
 
 ## Tasks
