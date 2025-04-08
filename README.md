@@ -5,30 +5,38 @@ using *MariaDB*
 
 ## Details
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b0056083-cc8f-491e-a6c5-16630f9abaeb" alt="main">
+  <img src="https://github.com/user-attachments/assets/6b24f294-37fd-4f2a-a944-39cddf8be309" alt="main">
 </p>
 
 ### <div align="center">똑똑한 우리 아이 돈관리</div>
 
 ## Key Features
-- ```회원 관리```
-- ```매물 관리```
-- ```온라인 계약```
-- ```알림 서비스```
-- ```커뮤니티(채팅, 게시판)```
-- ```대출상품 추천```
+- ```용돈 계약```
+- ```용돈 관리 및 저금```
+- ```금융 교육```
+- ```모의 투자```
 
 ## Getting Started
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-
-```http://localhost:8080/salre/```
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ```
-apikey.properties
-mysqlDB.properties
-database.sql
+npm install
+npm start
 ```
-- *apikey.properties* ```..\src\main\webapp\WEB-INF\spring\```
+
+```INI
+# common
+MetaMask
+dump.sql
+
+# BackEnd
+application.properties
+
+# FrontEnd
+.env
+```
+
+- *application.properties* ```..\src\main\webapp\WEB-INF\spring\```
   - 본인인증 API 키 발급 필요([포트원 API 가이드](https://developers.portone.io/opi/ko/extra/identity-verification/v1/phone/readme?v=v1))
   - 카카오맵 API 키 발급 필요([카카오맵 API 가이드](https://apis.map.kakao.com/web/guide/))
 
@@ -56,8 +64,8 @@ database.sql
     username=root
     password=1234
     ```
-- *database.sql*
-  - MySQL 기준 작성
+- *dump.sql*
+  - MariaDB 기준 작성
   - 데이터 추가, 수정, 삭제(유동적으로 활용 가능)
 
 ## Tasks
